@@ -1,3 +1,5 @@
+//Solution passes all tests with 0ms runtime (meets or beats 100% of competitors) and 6.5MB memory
+//(meets or beats 98.63% of competitors)
 package p4
 
 func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
@@ -23,6 +25,9 @@ func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 	};
 
 	i := 0;
+	if bridge_mids {
+		i++;
+	}
 	for i < total_len/2 {
 		nextNum();
 		i++;
